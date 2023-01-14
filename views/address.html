@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="flex-box">
+      <div class="address">
+        <div class="flex-box">
+          <img
+            src="https://img.icons8.com/external-nawicon-outline-color-nawicon/64/000000/external-location-maps-and-navigation-nawicon-outline-color-nawicon-2.png"
+          />
+
+          <h1 class="title">Your Address</h1>
+        </div>
+        <h4 id="your-address">Your Address</h4>
+      </div>
+    </div>
+
+    <div class="flex-box">
+      <div class="flex-box" id="latlong">
+        <div class="address-box flex-box">
+          <div class="address-text-box">
+            <h4 id="your-latlong">Your Address</h4>
+          </div>
+        </div>
+      </div>
+      <div class="field" id="form">
+        <form action="/get-address" method="post" id="getLatLong">
+          <div class="box main-box" id="field">
+            <h1 class="input-title">Postalcode</h1>
+            <input type="number" name="postalcode" required />
+          </div>
+          <div class="box main-box" id="field">
+            <h1 class="input-title">Landmark</h1>
+            <input type="text" name="landmark" required />
+          </div>
+          <div class="box main-box" id="field">
+            <h1 class="input-title">City</h1>
+            <input type="text" name="city" required />
+          </div>
+          <div class="box main-box" id="field">
+            <h1 class="input-title">State</h1>
+            <input type="text" name="state" required />
+          </div>
+          <div class="box main-box" id="field">
+            <h1 class="input-title">Country</h1>
+            <input type="text" name="country" required />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="/js/get_user_location.js"></script>
+    <script
+      type="text/javascript"
+      src="/js/get_latlon_from_address.js"
+    ></script>
+  </body>
+</html>
